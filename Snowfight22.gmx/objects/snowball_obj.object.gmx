@@ -102,18 +102,17 @@ max_height = 1;
             <string>var full_distance = point_distance(xstart, ystart, target_x, target_y);
 if (full_distance != 0)
 {
-    var distance_travelled = point_distance(xstart, ystart, x, y);
-    var percent_travelled = distance_travelled / full_distance;
-    
     //https://www.desmos.com/calculator
     //
-    //y=1-\operatorname{abs}\left(x\right)
-    //y=1-\operatorname{abs}\left(x^{\left(2\right)}\right)
+    //y=2\cdot\left(0.5-\operatorname{abs}\left(x-0.5\right)\right)
+    //y=4\cdot\left(0.5^{2}-\operatorname{abs}\left(\left(x-0.5\right)\cdot\left(x-0.5\right)\right)\right)
+
     
+    var dist_travelled = point_distance(xstart, ystart, x, y);
+    var percent_travelled = dist_travelled / full_distance;
+
+    var percent_height = 4 * ( 0.25 - abs((percent_travelled-0.5)*(percent_travelled-0.5)) );
     
-    var percent_dist_from_center = (0.5 - precent_travelled) / 0.5;
-    
-    var percent_height = 1 - abs(dist_from_center);
     var height_offset = max_height * percent_height;
     var percent_shadow_size = 1 - percent_height/2;
     

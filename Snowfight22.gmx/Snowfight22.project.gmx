@@ -16,6 +16,7 @@
   <objects name="objects">
     <object>objects\snowball_obj</object>
     <object>objects\child_obj</object>
+    <object>objects\splatter_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\test_rm</room>

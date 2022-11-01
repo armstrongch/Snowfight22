@@ -2,8 +2,8 @@
 
 var start_x = argument0;
 var start_y = argument1;
-var target_x = argument2;
-var target_y = argument3;
+var target_x = argument2 - 4 + irandom(8);
+var target_y = argument3 - 4 + irandom(8);
 
 var snowball_direction = point_direction(start_x, start_y, target_x, target_y);
 

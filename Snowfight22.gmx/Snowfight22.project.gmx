@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\splatter_spr</sprite>
+    <sprite>sprites\wall_spr</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -17,6 +18,8 @@
     <object>objects\snowball_obj</object>
     <object>objects\child_obj</object>
     <object>objects\splatter_obj</object>
+    <object>objects\wall_obj</object>
+    <object>objects\dynamic_depth_parent</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\test_rm</room>

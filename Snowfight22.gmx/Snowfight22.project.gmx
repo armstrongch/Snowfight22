@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\splatter_spr</sprite>
     <sprite>sprites\wall_spr</sprite>
+    <sprite>sprites\child_spr</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
